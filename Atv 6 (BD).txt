@@ -1,0 +1,31 @@
+create table aluno (
+
+id int not null auto_icrement,
+nome varchar (15) not null
+matrícula int (4),
+email varchar (50),
+endereço varchar (50),
+telefone int (10),
+primary key (id)
+) default charset = utf8;
+
+create table livro (
+
+Cod_Livro int not null auto_increment
+Titulo varchar(50 not null,
+autor varchar (30) not null,
+Cod_sessao int (3),
+primary key (Cod_Livro)
+) default charset = utf8;
+
+alter table ALUNO
+add column Data_Nascimento varchar(10);
+
+Alter table Aluno
+change column Telefone Contato varchar(20);
+
+alter table Livro
+add column ISBN int (13);
+
+alter table Livro
+drop column ISBN;
